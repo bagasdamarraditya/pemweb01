@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pemesanan Barang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .menu ul {list-style: none; padding: 1; margin: 0; display: flex;}
+        .menu li {margin-right: 150px;}
+        .navbar { display: flex; align-items: center; background-color: none ; color: black; padding: 10px;}
+        .bg {background-color: black;}
+        .box {border: 1px solid #ccc; padding: 10px; background-color: black;}
+        .a1 {color: white;}
+        body {font-family: Arial, sans-serif;margin: 0;padding: 0;}
+        form {background-color: black;padding: 20px;border-radius: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);max-width: 800px;margin: 20px auto;display: flex;align-items: center;}
+        .form-image {flex: 1;padding: 10px;}
+        .form-image img {max-width: 100%;}
+        .form-content {flex: 2;padding: 10px;}
+        label {display: block;margin-top: 10px;}
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {width: 100%;padding: 10px;margin-top: 5px;margin-bottom: 15px;border: 1px solid #ccc;border-radius: 5px;}
+        select {height: 35px;}
+        input[type="submit"] {background-color: #333;color: #fff;padding: 10px 20px;border: none;border-radius: 5px;cursor: pointer;}
+        input[type="submit"]:hover {background-color: #555;}
+    </style>
+</head>
+<body>
+    <header class="bg">
+        <div class="navbar">
+            <nav class="menu">
+            <ul>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Generate Link</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Transcation History</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Policy</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="a1">
+    <form action="f.html" method="post">
+        <div class="form-image">
+            <img src="gambar_produk.png" alt="Gambar Produk">
+        </div>
+        <div class="form-content">
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="alamat">Alamat Pengiriman:</label>
+            <textarea id="alamat" name="alamat" rows="4" required></textarea>
+
+            <label for="barang">Barang yang dipesan:</label>
+            <input type="text" id="barang" name="barang" required>
+
+            <label for="ukuran">Ukuran:</label>
+            <input type="number" id="ukuran" name="ukuran" required>
+
+            <label for="jumlah">Jumlah:</label>
+            <input type="number" id="jumlah" name="jumlah" required>
+
+            <label for="metode_pembayaran">Metode Pembayaran:</label>
+            <select id="metode_pembayaran" name="metode_pembayaran" required>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="Kartu Kredit">Kartu Kredit</option>
+                <option value="COD (Cash On Delivery)">COD (Cash On Delivery)</option>
+            </select>
+            <input type="submit" value="Pesan Barang">
+        </div>
+    </form>
+    </div>
+</body>
+</html>

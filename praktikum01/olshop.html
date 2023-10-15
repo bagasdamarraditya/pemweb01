@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>limabelastore.com</title>
+<link rel="stylesheet" href="style.css">
+<style>
+        .menu ul {list-style: none; padding: 1; margin: 0; display: flex;}
+        .menu li {margin-right: 20px;}
+        .navbar { display: flex; align-items: center; background-color: none ; color: black; padding: 10px;}
+        .logo img {max-height: 40px; margin-right: 10px;}
+        .store-name h1 {margin: 0;font-size: 24px;font-weight: bold;}
+        .box {border: 1px solid #ccc; padding: 10px; background-color: black;}
+        .a1 {color: white;}
+        .a2 {color: black;}
+        .bg {background-color: black;}
+        .search-container {position: fixed;top: 10px;right: 10px;display: flex;background-color: #fff;border-radius: 20px;overflow: hidden;box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}
+        .search-input {flex: 1;border: none;padding: 10px;background-color: transparent;color: #333;outline: none;}
+        .search-button {background-color: #333;color: #fff;border: none;padding: 10px 20px;border-radius: 0 20px 20px 0;cursor: pointer;}
+        .search-button:hover {background-color: #555;}
+        .image-text-container {display: flex;align-items: center;}
+        .image {width: 500px;height: auto;margin-right: 20px;}
+        .text {display: flex;flex-direction: column;}
+		.text-container {display: flex;background-color: #000;justify-content: center;align-items: center;border: 5px solid white;padding: 5px;}
+</style>
+</head>
+<body>
+<header class="bg">
+<div class="navbar">
+	<div class="logo">
+		<img src="logo.png" alt="limabelastore.com"></div>
+	<div class="store-name" class="text">
+		<h1><a class="a1" href="#">limabelastore.com</a></h1>
+		<div class="search-container">
+			<input class="search-input" type="text" placeholder="Cari..."/>
+			<button class="search-button">Cari</button>
+		</div>
+	</div>
+	<nav class="menu">
+	<ul>
+		<li>
+			<div class="box">
+				<a class="a1" href="#">Beranda</a>
+			</div>
+		</li>
+		<li>
+			<div class="box">
+				<a class="a1" href="#">Kategori</a>
+			</div>
+		</li>
+		<li>
+			<div class="box">
+				<a class="a1" href="#">Keranjang</a>
+			</div>
+		</li>
+		<li>
+			<div class="box">
+				<a class="a1" href="#">Kontak</a>
+			</div>
+		</li>
+	</ul>
+	</nav>
+</div>
+</header>
+<hr>
+<h2>Selamat Datang di Toko limabelastore.com</h2>
+<p>
+	Temukan produk olahraga terbaik dengan harga terjangkau.
+</p>
+<div class="text-container"><a class="a1" href="#" class="btn">Jelajahi</a></div>
+</div>
+</section>
+<br>
+<hr>
+<br>
+<section class="produk">
+<h2>Produk Kami</h2>
+<div class="image-text-container">
+<img class="image" src="Futsal Specs Lightspeed Reborn IN.jpg" alt="Futsal Specs Lightspeed Reborn IN" border="1">
+<div class="text">
+	<h3>Futsal Specs Lightspeed Reborn IN</h3>
+	<p>
+		Harga: Rp.599.000
+	<p><label for="shoe-size">Pilih Ukuran Sepatu:</label>
+		<select id="shoe-size" name="shoe-size">
+			<option value="36">36</option>
+			<option value="37">37</option>
+			<option value="38">38</option>
+			<option value="39">39</option>
+			<option value="40">40</option>
+			<option value="41">41</option>
+			<option value="42">42</option>
+			<option value="43">43</option>
+			<option value="44">44</option>
+			<option value="45">45</option>
+		</select>
+	</p>
+	</p>
+	<div class="text-container"><a class="a1" href="#">BELANJA SEKARANG</a></div>
+</div>
+</div>
+</section>
+<section class="kategori">
+<br>
+<br>
+<br>
+<div class="bg">
+<hr>
+<h2 class="a1">Kategori</h2>
+<ul>
+	<li>
+		<a class="a1" href="#">Sepatu Futsal</a>
+	</li>
+	<li>
+		<a class="a1" href="#">Sepatu Running</a>
+	</li>
+	<li>
+		<a class="a1" href="#">Pakaian Olahraga</a>
+	</li>
+	<li>
+		<a class="a1" href="#">Perlengkapan Olahraga Lainnya</a>
+	</li>
+</ul>
+</div>
+</section>
+<footer>
+<p>
+&copy; 2023 limabelastore.com
+</p>
+</footer>
+</body>
+</html>
