@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Pemesanan Barang</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .menu ul {list-style: none; padding: 1; margin: 0; display: flex;}
+        .menu li {margin-right: 150px;}
+        .navbar { display: flex; align-items: center; background-color: none ; color: black; padding: 10px;}
+        .bg {background-color: black;}
+        .box {border: 1px solid #ccc; padding: 10px; background-color: black;}
+        .a1 {color: white;}
+        body {font-family: Arial, sans-serif;margin: 0;padding: 0;}
+        form {background-color: black;padding: 20px;border-radius: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);max-width: 800px;margin: 20px auto;display: flex;align-items: center;}
+        .form-image {flex: 1;padding: 10px;}
+        .form-image img {max-width: 100%;}
+        .form-content {flex: 2;padding: 10px;}
+        label {display: block;margin-top: 10px;}
+        input[type="text"],
+        input[type="number"],
+        textarea,
+        select {width: 100%;padding: 10px;margin-top: 5px;margin-bottom: 15px;border: 1px solid #ccc;border-radius: 5px;}
+        select {height: 35px;}
+        input[type="submit"] {background-color: #333;color: #fff;padding: 10px 20px;border: none;border-radius: 5px;cursor: pointer;}
+        input[type="submit"]:hover {background-color: #555;}
+    </style>
+</head>
+<body>
+    <header class="bg">
+        <div class="navbar">
+            <nav class="menu">
+            <ul>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Home</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Generate Link</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Transcation History</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Policy</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="box">
+                        <a class="a1" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="a1">
+    <form action="f.html" method="post">
+        <div class="form-image">
+            <img src="gambar_produk.png" alt="Gambar Produk">
+        </div>
+        <div class="form-content">
+            <h1>Pesananmu Berhasil!</h1>
+            <label for="nama">Nama Lengkap: Bagas Damar Raditya</label>
+            
+            <label for="alamat">Alamat Pengiriman: Jalan Sadewa II</label>
+
+            <label for="barang">Barang yang dipesan: Sepatu Futsal Ortuseight Jogosala Rampage V2</label>
+
+            <label for="ukuran">Ukuran: 40</label>
+
+            <label for="jumlah">Jumlah: 1</label>
+
+            <label for="metode_pembayaran">Metode Pembayaran: COD (Cash On Delivery)</label>
+
+            </select>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
