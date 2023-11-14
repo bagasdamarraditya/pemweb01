@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrasi Kendaraan</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        h3 {
+            text-align: center;
+            font-weight: 20px;
+        }
+
+        table {
+            display: block;
+            width: fit-content;
+            margin: 20px auto;
+        }
+
+        input,select {
+            height: 25px;
+            border-radius: 5px;
+        }
+
+        input,select,textarea {
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        td {
+            padding: 6px;
+        }
+
+        label {
+            font-size: 14px;
+            display: block;
+            text-align: end;
+        }
+
+        button {
+            padding: 7px 10px;
+            border: 0;
+            border-radius: 4px;
+            color: white;
+        }
+
+        .btn-blue {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h3>Registrasi Kendaraan Anda</h3>
+    <fieldset>
+    <table>
+        <tr>
+            <td>
+                <label for="Status">Status</label>
+            </td>
+
+            <td>
+                <input type="radio" name="Mahasiswa">Mahasiswa
+                <input type="radio" name="Dosen">Dosen
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="NIM/NIDN">NIM/NIDN</label>
+            </td>
+
+            <td>
+                <input type="number" id="NIM/NIDN">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="namalengkap">Nama Lengkap</label>
+            </td>
+
+            <td>
+                <input type="text" name="namalengkap" id="namalengkap">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="prodi">Prodi</label>
+            </td>
+
+            <td>
+                <select name="prodi" id="prodi">
+                    <option value="">Pilih Prodi</option>
+                    <option value="prodi">Sistem Informasi</option>
+                    <option value="prodi">Teknik Informatika</option>
+                    <option value="prodi">Bisnis Digital</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="jeniskendaraan">Jenis Kendaraan</label>
+            </td>
+
+            <td>
+                <input type="radio" name="jeniskendaraan" id="jeniskendaraan">Motor
+                <input type="radio" name="jeniskendaraan" id="jeniskendaraan">Mobil
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="nopol">NoPol</label>
+            </td>
+
+            <td>
+                <input type="number" id="nopol">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="merk">Merk</label>
+            </td>
+
+            <td>
+                <input type="text" id="merk">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <label for="uploadstnk">Upload STNK</label>
+            </td>
+
+            <td>
+                <input type="file" id="uploadstnk" name="uploadstnk">
+                <button type="browse" class="btn-blue">Browse</button>
+            </td>
+
+        </tr>
+
+        <tr>
+            <td></td>
+            <td>
+            <button type="submit" class="btn-blue">Daftar</button>
+            </td>
+        </tr>
+    </table>
+    </fieldset>
+
+</body>
+</html>
