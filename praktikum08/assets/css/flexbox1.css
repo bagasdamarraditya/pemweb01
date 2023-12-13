@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -18,4 +19,26 @@ header ul {
 
 header ul li {
     margin: 0 10px;
+=======
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul li {
+    margin: 0 10px;
+>>>>>>> 221bfbed5a89887a231be97fcd16050fc6797f62
 }

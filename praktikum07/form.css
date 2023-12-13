@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     margin: 0;
     padding: 0;
@@ -63,4 +64,71 @@ button{
 
 .btn-red {
     background-color: crimson;
+=======
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    background-color: black;
+    padding: 20px 100px;
+}
+
+.navbar a {
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.text-title{
+    font-size: 18px !important;
+}
+
+h2{
+    text-align: center;
+    font-weight: 100;
+}
+
+table {
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+input, select{
+    height: 25px;
+    border-radius: 5px;
+}
+
+input, select, textarea{
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+td{
+    padding: 6px;
+}
+
+label{
+    font-size: 14px;
+    display: block;
+    text-align: end;
+}
+
+button{
+    padding: 7px 10px;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn-blue {
+    background-color: cornflowerblue;
+}
+
+.btn-red {
+    background-color: crimson;
+>>>>>>> 221bfbed5a89887a231be97fcd16050fc6797f62
 }
