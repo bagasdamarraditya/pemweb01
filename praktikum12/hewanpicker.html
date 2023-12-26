@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Picker</title>
+  <style>
+    #image-container {
+      margin-top: 20px;
+    }
+    #notification {
+      margin-top: 10px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <label for="image-dropdown">Pilih Gambar:</label>
+  <select id="image-dropdown" onchange="showImage()">
+    <option value="">Pilih Gambar</option>
+    <option value="ayam.jpg">Ayam</option>
+    <option value="bebek.jpg">Bebek</option>
+    <option value="burung.jpg">Burung</option>
+    <option value="Harimau.jpeg">Harimau</option>
+    <option value="Kuda.jpeg">Kuda</option>
+  </select>
+
+  <div id="image-container">
+    <img id="selected-image" src="" alt="Gambar yang dipilih">
+  </div>
+
+  <div id="notification"></div>
+
+  <script>
+    function showImage() {
+      var dropdown = document.getElementById("image-dropdown");
+      var selectedImage = document.getElementById("selected-image");
+      var notification = document.getElementById("notification");
+
+
+      selectedImage.style.display = "none";
+      notification.innerHTML = "";
+
+     
+      if (dropdown.value !== "") {
+        
+        selectedImage.src = "img/" + dropdown.value;
+        selectedImage.style.display = "block";
+
+        setTimeout(function() {
+          alert("Ini adalah gambar " + dropdown.value);
+        }, 0);
+      }
+    }
+  </script>
+</body>
+</html>
