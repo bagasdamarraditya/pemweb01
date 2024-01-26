@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log In</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="css/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/adminlte.min.css">
+</head>
+<body class="hold-transition login-page">
+  <div class="login-box" style="width: auto;">
+    <!-- /.login-logo -->
+    <div class="card card-outline card-primary">
+      <div class="card-header text-center">
+        <h1>Login Klinik Gigi TruSmile</h1>
+      </div>
+      <div class="card-body">
+        <div class="form-group row">
+          <label for="username" class="col-sm-3 col-form-label text-right">Username</label>
+          <div class="col-sm-9">
+              <div class="input-group">
+                  <input type="text" class="form-control" id="username">
+                  <div class="input-group-append">
+                      <div class="input-group-text">
+                          <span class="fas fa-envelope"></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="form-group row">
+          <label for="password" class="col-sm-3 col-form-label text-right">Password</label>
+          <div class="col-sm-9">
+              <div class="input-group">
+                  <input type="password" class="form-control" id="password">
+                  <div class="input-group-append">
+                      <div class="input-group-text">
+                          <span class="fas fa-lock"></span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <!-- /.col -->
+      <div class="row">
+        <div class="col-md-6 offset-md-3 text-center">
+          <button type="button" class="btn btn-primary btn-flat" onclick="validateLogin()">Masuk</button>
+          <p>Belum punya akun? <a href="register.html">Registrasi</a></p>
+        </div>
+      </div>
+      
+      
+      
+      <!-- /.col -->
+    </div>
+    <!-- /.card-body -->
+  </div>
+  <!-- /.card -->
+
+  <!-- jQuery -->
+  <script src="jd/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="js/adminlte.min.js"></script>
+
+  <script>
+    function validateLogin() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "" || password === "") {
+        alert("Username/Password Belum Terisi");
+      } else if (username === "admin" && password === "admin") {
+        alert("Login berhasil, Selamat datang Admin!");
+        // Arahkan ke halaman daftarbooking.html setelah login berhasil
+        window.location.href = "daftarbooking.html";
+      } else {
+        alert("Login gagal, silahkan cek kembali username dan password Anda");
+      }
+    }
+</script>
